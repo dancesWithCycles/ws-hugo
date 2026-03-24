@@ -1,0 +1,10 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "My Hugo + Sveltia Site"
+
+[params]
+  description = "Modern static site with CMS"
+
+  [markup]
+    [markup.goldmark.renderer]
+        unsafe = true

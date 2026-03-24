@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ .Title }}</title>
+<meta name="description" content="{{ .Site.Params.description }}">
+
+<!-- <link rel="stylesheet" href="/css/main.css"> -->
+<!-- If you want a modern setup (minification, bundling, cache-busting), keep the file in assets/ and change your template. -->
+{{ $style := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
